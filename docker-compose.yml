@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+    mosquitto:
+        image: eclipse-mosquitto
+        ports:
+        - "1883:1883"
+        - "9001:9001"
+        volumes:
+        - ./docker_volume/data:/mosquitto/data
+        - ./docker_volume/log:/mosquitto/log
+        - ./docker_volume/config:/mosquitto/config/
+
+
+#        networks:
+#         - sdnet
+#networks:
+#   sdnet:
+#       driver: ""
