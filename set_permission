@@ -1,0 +1,2 @@
+#!/bin/sh
+chmod 777 docker_volume/log/mossquitto.log
